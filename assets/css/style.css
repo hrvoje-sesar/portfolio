@@ -1,0 +1,1313 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* Base */
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 3rem 0 0 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  font-weight: 500;
+  color: #a2acbd;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 58px;
+  position: relative;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.webs {
+  text-align: center;
+}
+/* Class CSS */
+.title {
+  text-align: center;
+  position: relative;
+  font-size: 1.5rem;
+  padding: 2rem 0 0 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: #2a3749;
+}
+
+.section {
+  padding: 3rem 0 2rem;
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+.contact-me {
+  text-align: center;
+}
+
+.section-title {
+  position: relative;
+  font-size: 1.5rem;
+  padding: 2rem 0 0 0;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: #2a3749;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 0.15rem;
+  bottom: -0.25rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #e4a109;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 0.15rem;
+  bottom: -0.25rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #e4a109;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 0.75rem;
+  color: #2a3749;
+  margin: 1.8rem 3rem;
+}
+.contact-me {
+  display: block;
+  font-size: 0.75rem;
+  color: #2a3749;
+  margin: 1.8rem 3rem;
+}
+/* Layout */
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #2a3749;
+}
+
+.nav {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row .personal.info {
+  font-family: "Poppins", sans-serif;
+  flex: 0 0 60%;
+  font-size: 2rem;
+  padding-top: 80px;
+  display: flex;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.row .personal-info .naslov {
+  align: center;
+
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: #2a3749;
+  padding-top: 60px;
+  margin-left: 100px;
+}
+
+.row .personal-info .info-item {
+  margin-left: 250px;
+  margin-top: 60px;
+  color: black;
+  text-align: center;
+}
+.row .personal-info .info-item p {
+  font-weight: 600px;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding-top: 1.5rem;
+    text-align: center;
+    background-color: #2a3749;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(165, 146, 146, 0.1);
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .contact-me-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Fiksni stupac */
+    gap: 1.5rem; /* Razmak između elemenata */
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
+    background: #2a3749;
+    margin: 0 auto;
+    max-width: 600px; /* Maksimalna širina */
+  }
+
+  .contact-me-form {
+    display: grid;
+    grid-template-columns: 1fr; /* Fiksni raspored elemenata u stupac */
+    gap: 1rem; /* Razmak između input polja i dugmeta */
+  }
+
+  .contact-me-section {
+    margin-top: -6rem; /* Uklanja gornji razmak sekcije Contact Me */
+    padding-top: 1rem; /* Opcionalno: Dodaje manji razmak unutar sekcije */
+  }
+
+  .contact-me-form input,
+  .contact-me-form textarea {
+    width: 100%; /* Fiksna širina inputa */
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .contact-me-form textarea {
+    resize: none; /* Onemogućuje promjenu veličine teksta */
+  }
+
+  /* Button Styles */
+  .contact-me-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    background-color: #2a3749;
+    color: #e4a109;
+    padding: 0.6rem 1rem;
+    border: 1px #e4a109 solid;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    margin: 0.5rem auto;
+  }
+
+  .contact-me-button:hover {
+    background-color: #e4a109;
+    color: #2a3749;
+  }
+
+  .contact-me-form label {
+    color: #e4a109; /* Postavlja boju za sve labele */
+    font-weight: bold; /* Opcionalno: dodaje deblji tekst za labele */
+  }
+}
+
+.nav__item {
+  margin-bottom: 1.5rem;
+}
+
+.nav__link {
+  color: #f9f9f9;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  color: #e4a109;
+  text-decoration-line: underline;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: #f9f9f9;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.nav__logo:hover,
+.nav__toggle:hover {
+  color: #e4a109;
+  transition: 0.3s ease;
+}
+
+.show-menu {
+  top: 3rem;
+}
+
+.active-link {
+  position: relative;
+}
+
+.active-link:after {
+  content: "";
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  width: 70%;
+  height: 3px;
+  background-color: #e4a109;
+}
+
+/* Change background header */
+.scroll-header {
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(24, 22, 22, 0.301);
+}
+
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle,
+.scroll-header .nav__link {
+  color: #2a3749;
+}
+
+.scroll-header .nav__link:hover {
+  color: #a2acbd;
+}
+
+.scroll-header .nav__menu {
+  background-color: #f9f9f9;
+}
+
+.home {
+  background-color: #2a3749;
+  margin-bottom: 4rem;
+}
+
+.home__container {
+  position: relative;
+  height: calc(100vh - ($header-height));
+  grid-template-rows: repeat(2, max-content);
+  align-content: space-around;
+}
+
+.home__data {
+  color: #f9f9f9;
+  padding: 1rem 0.35rem;
+  z-index: 10;
+}
+
+.home__greeting {
+  display: block;
+  font-weight: 700;
+  color: #a2acbd;
+}
+
+.home__title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #e4a109;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.home__career {
+  display: block;
+  color: #e4a109;
+  line-height: 0.1rem;
+  margin-bottom: 2rem;
+}
+
+.home__description {
+  color: #a2acbd;
+}
+
+.home button {
+  margin-top: 1.5rem;
+}
+
+.home-btn {
+  color: #f9f9f9;
+  background-color: black;
+  border: 0;
+  margin: 0.1rem;
+}
+
+.home__hire {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background-color: #e4a109;
+  color: #2a3749;
+  padding: 0.5rem 2rem;
+  border: 1px #e4a109 solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.home__hire:hover {
+  background-color: #2a3749;
+  color: #e4a109;
+  border: 1px #e4a109 solid;
+  transition: 0.3s ease-in;
+}
+
+.home__hire:focus {
+  outline: 0;
+}
+
+.home__download {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background-color: #2a3749;
+  color: #e4a109;
+  padding: 0.5rem 0.65rem;
+  border: 1px #e4a109 solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.home__download:hover {
+  background-color: #e4a109;
+  color: #2a3749;
+  transition: 0.3s;
+}
+
+.home__download:focus {
+  outline: 0;
+}
+
+.home__social {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  font-size: 1.3rem;
+  margin-top: 6rem;
+}
+
+.home__icon {
+  cursor: pointer;
+  margin: 0.5rem;
+  color: #f9f9f9;
+}
+
+.home__icon:hover {
+  color: #e4a109;
+  transition: 0.3s;
+}
+
+.home__icon:focus {
+  outline: 0;
+}
+
+.home__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: center;
+  padding-bottom: 50px;
+}
+
+.home__img img {
+  width: 250px;
+  padding-top: 80px;
+  filter: drop-shadow(1rem 0.8rem 2rem rgba(7, 7, 7, 0.76));
+  filter: drop-shadow(8px 8px 4px #a2acbd);
+}
+
+.contact__inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+}
+
+.contact__input,
+.contact__button {
+  outline: none;
+  font-family: #a2acbd;
+  font-size: 0.938rem;
+}
+
+.contact__input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #2a3749;
+  color: #2a3749;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  resize: none;
+}
+
+.contact::placeholder {
+  color: #a2acbd;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.contact__button {
+  cursor: pointer;
+  border: none;
+}
+
+.modal__container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.services {
+  background-color: #f9f9f9;
+  padding-bottom: 4rem;
+}
+
+.services__section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #2a3749;
+  letter-spacing: 0.25rem;
+}
+
+.services__container {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.services__data {
+  display: grid;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
+  background: #2a3749;
+}
+
+.services__data:nth-of-type(4) img {
+  height: 230px;
+}
+
+.services__img {
+  width: 230px;
+  margin-bottom: 3rem;
+  justify-self: center;
+}
+
+.services__title {
+  color: #e4a109;
+  margin-bottom: 0.5rem;
+}
+
+.services__description {
+  color: #f9f9f9;
+}
+
+.portfolio {
+  background-color: #f9f9f9;
+  padding-bottom: 4rem;
+}
+
+.portfolio__section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #2a3749;
+  letter-spacing: 0.25rem;
+}
+
+.portfolio__container {
+  display: flex;
+  row-gap: 1.5rem;
+}
+
+.portfolio__data {
+  display: grid;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
+  background: #2a3749;
+}
+
+.portfolio__img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  justify-self: center;
+}
+
+.portfolio__img img {
+  border-radius: 8px;
+  box-shadow: 0 1px 2.2px rgba(0, 0, 0, 0.076),
+    0 2.3px 5.3px rgba(0, 0, 0, 0.109), 0 4.4px 10px rgba(0, 0, 0, 0.135),
+    0 7.8px 17.9px rgba(0, 0, 0, 0.161), 0 14.6px 33.4px rgba(0, 0, 0, 0.194),
+    0 35px 80px rgba(0, 0, 0, 0.27);
+}
+
+.portfolio__title {
+  color: #e4a109;
+  margin-bottom: 1rem;
+}
+
+.portfolio__description {
+  color: #f9f9f9;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio__link {
+  margin-bottom: 3rem;
+}
+
+.portfolio__link span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  background-color: #2a3749;
+  color: #e4a109;
+  padding: 0.5rem 1rem;
+  border: 1px #e4a109 solid;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.portfolio__link span:hover {
+  background-color: #e4a109;
+  color: #2a3749;
+  transition: 0.3s;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #a2acbd;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #e4a109;
+}
+
+.footer {
+  background-color: #2a3749;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.footer__container {
+  display: grid;
+  text-align: center;
+}
+
+.footer__copy {
+  text-align: center;
+  font-weight: 100;
+  color: #e4a109;
+}
+
+.footer__copy-link {
+  color: #e4a109;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__box p {
+  padding-bottom: 0.3rem;
+  color: #f9f9f9;
+}
+
+.footer__box a {
+  color: #a2acbd;
+}
+
+.row .personal.info {
+  font-family: "Poppins", sans-serif;
+  flex: 0 0 60%;
+  font-size: 2rem;
+  padding-top: 80px;
+  display: flex;
+  align: center;
+}
+
+.row .personal-info .naslov {
+  text-align: left;
+  margin-left: 220px;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: #2a3749;
+  padding-top: 70px;
+
+  right: 0;
+  bottom: 0;
+}
+
+.row .personal-info .info-item {
+  margin-left: 10px;
+
+  color: black;
+}
+.row .personal-info .info-item p {
+  max-width: 1200px;
+  padding-top: 10px 0;
+  margin-left: 150px;
+  text-align: left;
+  font-size: 16px;
+}
+
+@media (min-width: 506px) {
+  .home__img img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .contact-me-container {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto; */
+    display: grid;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
+    background: #2a3749;
+    /*responsive*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-me-section {
+    margin-top: -5rem; /* Uklanja gornji razmak sekcije Contact Me */
+    padding-top: 1rem; /* Opcionalno: Dodaje manji razmak unutar sekcije */
+  }
+
+  .contact-me-button {
+    font-family: "Poppins", sans-serif; /* Isti font */
+    font-weight: 500; /* Ista težina fonta */
+    font-size: 0.75rem;
+    background-color: #2a3749; /* Ista pozadina */
+    color: #e4a109; /* Ista boja teksta */
+    /* padding: 0.5rem 1rem;  */
+    /* width: 100%; */
+    padding: 0.5rem 1rem;
+    border: 1px #e4a109 solid;
+    cursor: pointer; /* Isti pokazivač */
+    border-radius: 2px; /* Isti zaobljeni rubovi */
+    text-align: center; /* Centriranje teksta */
+    transition: all 0.3s ease-in-out; /* Dodavanje prelaznog efekta */
+    margin-top: 10px;
+    font-size: 16px;
+    display: inline-block; /* Kako bi uklonio prekomjerni prostor */
+  }
+
+  .contact-me-button:hover {
+    background-color: #e4a109; /* Promjena boje pozadine na hover */
+    color: #2a3749; /* Promjena boje teksta na hover */
+  }
+
+  .contact-me-form label {
+    color: #e4a109; /* Postavlja boju za sve labele */
+    font-weight: bold; /* Opcionalno: dodaje deblji tekst za labele */
+  }
+
+  .home__container,
+  .services__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .services__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .row .personal.info {
+    font-family: "Poppins", sans-serif;
+    flex: 0 0 90%;
+    font-size: 1.5rem;
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align: left;
+    margin-left: 30px;
+  }
+
+  .row .personal-info .naslov {
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    color: #2a3749;
+    padding-top: 60px;
+    align: center;
+    flex-wrap: wrap;
+    margin-left: 550px;
+  }
+
+  .row .personal-info .info-item {
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  .row .personal-info .info-item p {
+    font-weight: 500px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .contact-me-container {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto; */
+    display: grid;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
+    background: #2a3749;
+    /*responsive*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-me-section {
+    margin-top: -20rem; /* Uklanja gornji razmak sekcije Contact Me */
+    padding-top: 1rem; /* Opcionalno: Dodaje manji razmak unutar sekcije */
+  }
+
+  .contact-me-button {
+    font-family: "Poppins", sans-serif; /* Isti font */
+    font-weight: 500; /* Ista težina fonta */
+    font-size: 0.75rem;
+    background-color: #2a3749; /* Ista pozadina */
+    color: #e4a109; /* Ista boja teksta */
+    /* padding: 0.5rem 1rem;  */
+    /* width: 100%; */
+    padding: 0.5rem 1rem;
+    border: 1px #e4a109 solid;
+    cursor: pointer; /* Isti pokazivač */
+    border-radius: 2px; /* Isti zaobljeni rubovi */
+    text-align: center; /* Centriranje teksta */
+    transition: all 0.3s ease-in-out; /* Dodavanje prelaznog efekta */
+    margin-top: 10px;
+    font-size: 16px;
+    display: inline-block; /* Kako bi uklonio prekomjerni prostor */
+  }
+
+  .contact-me-button:hover {
+    background-color: #e4a109; /* Promjena boje pozadine na hover */
+    color: #2a3749; /* Promjena boje teksta na hover */
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .section {
+    padding-top: 2rem;
+  }
+  .section-title {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  .contact-me {
+    font-size: 1rem;
+  }
+  .nav {
+    height: calc($header-height + 1.5rem);
+  }
+  .nav__list {
+    display: flex;
+  }
+  .nav__item {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .home__container {
+    height: 100vh;
+    grid-template-rows: max-content 0.5fr;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: flex-end;
+  }
+  .home__greeting {
+    font-size: 1.25rem;
+    margin-bottom: 0.3rem;
+  }
+  .home__title {
+    font-size: 2.1rem;
+  }
+  .home__career {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  .home__description {
+    font-size: 1rem;
+  }
+  .home__social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.8rem;
+  }
+  .home__social a {
+    margin-right: 1.5rem;
+  }
+  .home__img {
+    display: flex;
+    top: 100px;
+  }
+  .home__img img {
+    width: 400px;
+    height: 350px;
+    filter: drop-shadow(8px 8px 4px #a2acbd);
+    width: 100%;
+    max-width: 1200px;
+    min-height: 150px;
+    display: flex;
+    wrap: wrap;
+    padding-top: 100px;
+  }
+
+  .services__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio__title {
+    font-size: 1.5rem;
+  }
+  .portfolio__img {
+    width: max-content;
+  }
+  .portfolio__img img {
+    width: 550px;
+  }
+  .portfolio__description {
+    margin: 2rem 5rem;
+  }
+  .portfolio__link span {
+    font-size: 1rem;
+  }
+  .row .personal.info {
+    font-family: "Poppins", sans-serif;
+    flex: 0 0 60%;
+    font-size: 0.5rem;
+    margin-left: 280px;
+    display: flex;
+    height: auto;
+    text-align: left;
+    margin-right: 30px;
+    width: 100%;
+  }
+
+  .row .personal-info .naslov {
+    text-align: center;
+
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #2a3749;
+    padding-top: 20px;
+  }
+
+  .row .personal-info .info-item {
+    margin-left: 270px;
+    text-align: left;
+    color: black;
+  }
+  .row .personal-info .info-item p {
+    font-weight: 400;
+    paddint: 10px 0;
+    width: 100%;
+    font-size: 13px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+  }
+}
+
+@media (min-width: 768px) {
+  .bd-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-me-container {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto; */
+    display: grid;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
+    background: #2a3749;
+    /*responsive*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-me-button {
+    font-family: "Poppins", sans-serif; /* Isti font */
+    font-weight: 500; /* Ista težina fonta */
+    font-size: 0.75rem;
+    background-color: #2a3749; /* Ista pozadina */
+    color: #e4a109; /* Ista boja teksta */
+    /* padding: 0.5rem 1rem;  */
+    /* width: 100%; */
+    padding: 0.5rem 1rem;
+    border: 1px #e4a109 solid;
+    cursor: pointer; /* Isti pokazivač */
+    border-radius: 2px; /* Isti zaobljeni rubovi */
+    text-align: center; /* Centriranje teksta */
+    transition: all 0.3s ease-in-out; /* Dodavanje prelaznog efekta */
+    margin-top: 10px;
+    font-size: 16px;
+    display: inline-block; /* Kako bi uklonio prekomjerni prostor */
+  }
+
+  .contact-me-button:hover {
+    background-color: #e4a109; /* Promjena boje pozadine na hover */
+    color: #2a3749; /* Promjena boje teksta na hover */
+  }
+
+  .contact-me-section {
+    margin-top: -5rem; /* Uklanja gornji razmak sekcije Contact Me */
+    padding-top: 1rem; /* Opcionalno: Dodaje manji razmak unutar sekcije */
+  }
+
+  .contact-me-form label {
+    color: #e4a109; /* Postavlja boju za sve labele */
+    font-weight: bold; /* Opcionalno: dodaje deblji tekst za labele */
+  }
+
+  .home__data {
+    padding-top: 2rem;
+  }
+  .home__img::after {
+    display: flex;
+    width: 100%;
+    min-width: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .row .personal.info {
+    font-family: "Poppins", sans-serif;
+    flex: 0 0 100%;
+    font-size: 1.5rem;
+    margin-left: 400px;
+    display: flex;
+    width: 100%;
+  }
+  .row .personal-info .info-item p {
+    font-weight: 400;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+  }
+
+  .row .personal-info .naslov {
+    text-align: center;
+    margin-left: 740px;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #2a3749;
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+  }
+
+  .row .personal-info .info-item {
+    margin-right: 195px;
+    margin-bottom: 19px;
+
+    color: black;
+  }
+  .row .personal-infor .info-item p {
+    font-weight: 600;
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+  }
+
+  .contact-me {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+
+  .contact-me .title h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .contact-me p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+  }
+
+  .con-me-form {
+    background-color: #2a3749;
+    display: grid;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .form-group textarea {
+    resize: none;
+  }
+
+  /* button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  } */
+
+  /* General styles for Contact Me Section */
+  .contact-me-section {
+    background-color: #f9f9f9; /* Isto kao Projects pozadina */
+    padding: 3rem 0;
+  }
+
+  .contact-me-container {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto; */
+    display: grid;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
+    background: #2a3749;
+    /*responsive*/
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-me-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-me-form .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-me-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  img.responsive {
+    max-width: 100%; /* Prilagođava se širini roditeljskog elementa */
+    height: auto;    /* Zadržava omjer slike */
+}
+
+
+  .contact-me-form input,
+  .contact-me-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .contact-me-form textarea {
+    resize: none;
+  }
+
+  .contact-me-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    background-color: #2a3749;
+    color: #e4a109;
+    padding: 0.6rem 1rem;
+    border: 1px #e4a109 solid;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    margin: 0.5rem auto;
+  }
+
+  .contact-me-button:hover {
+    background-color: #e4a109;
+    color: #2a3749;
+  }
+
+  /* Section title and subtitle styling */
+  .contact-me-section .section-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .contact-me-section .section-subtitle {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .contact-me-form label {
+    color: #e4a109; /* Postavlja boju za sve labele */
+    font-weight: bold; /* Opcionalno: dodaje deblji tekst za labele */
+  }
+
+  .contact-me-section {
+    margin-top: -2rem; /* Uklanja gornji razmak sekcije Contact Me */
+    padding-top: 1rem; /* Opcionalno: Dodaje manji razmak unutar sekcije */
+  }
+
+  #response-message {
+    font-size: 1rem;
+    margin-top: 20px;
+    display: block;
+  }
+}
