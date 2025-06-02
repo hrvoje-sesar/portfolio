@@ -24,7 +24,6 @@
   </head>
   <body>
    
-    <!-- Header -->
     <header class="l-header" id="header">
       <nav class="nav bd-container">
         <a href="#" class="nav__logo">PORTFOLIO</a>
@@ -50,7 +49,6 @@
         </div>
       </nav>
     </header>
-    <!-- Home -->
     
     <section class="home" id="home">
       <div class="home__container bd-container bd-grid">
@@ -108,7 +106,6 @@
       </div>
     </section>
 
-    <!-- Services -->
     <section class="services" id="services">
       <h2 class="section-title">About me</h2>
       <p class="section-subtitle">
@@ -135,7 +132,7 @@
         <p class="portfolio__description">
           A desktop contact recording application implemented in Python using
           the Tkinter interface and the SQLite 3 database library for the
-          "Skriptni jezici" subject.
+          faculty subject "Scripting Languages".
         </p>
         <a
           class="portfolio__link"
@@ -156,8 +153,8 @@
         </div>
         <p class="portfolio__description">
           Records of tables in certain reading rooms, insight into whether the
-          table is occupied or free. Implementation for the subject
-          "Programiranje u Javi" in Java programming language and MySQL
+          table is occupied or free. Implementation for the faculty subject
+          "Programming in Java" in Java programming language and MySQL
           database server.
         </p>
         <a
@@ -243,7 +240,7 @@ The purpose of the project is to
  buying and ordering them with regard to the illness or disease
   that a particular customer has and with regard to the doctor's recommendation.
    The application was made in PHP using the Laravel framework and MySQL
-    server as part of the course "Razvoj web aplikacija".
+    server as part of the course "Developing Web Applications".
 
         </p>
         <a
@@ -321,7 +318,7 @@ The purpose of the project is to
           to quickly find or offer a ride. Drivers wait for ride requests, while passengers
            simply enter their destination and confirm their request. Through the application,
             the locations of passengers and drivers are monitored in real time, enabling efficient
-          and safe travel. The application was created as part of a project for the Electronic Business course.
+          and safe travel. The application was created as part of a project for the "Electronic Business" course.
         </p>
         <a
           class="portfolio__link"
@@ -335,11 +332,9 @@ The purpose of the project is to
       </div>
     </div>
 
-    <!-- Navigacija -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 
-    <!-- Navigacijske točke -->
     <div class="swiper-pagination"></div>
   </div>
 </section>
@@ -390,11 +385,9 @@ The purpose of the project is to
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
  <script>
-    // Učitaj konfiguraciju iz JSON datoteke
     fetch('./config.json')
       .then((response) => response.json())
       .then((config) => {
-        // Inicijalizacija EmailJS
         emailjs.init(config.publicKey);
 
         document
@@ -404,19 +397,18 @@ The purpose of the project is to
 
               const responseMessage = document.getElementById("response-message");
 
-            // Slanje forme koristeći konfiguraciju iz JSON-a
             emailjs.sendForm(config.serviceID, config.templateID, this).then(
               function () {
                 console.log("Email sent successfully!");
                 responseMessage.style.display = "block";
                 responseMessage.textContent = "Email sent successfully!";
-                responseMessage.className = "success"; // Dodaj klasu za uspeh
+                responseMessage.className = "success"; 
               },
               function (error) {
                 console.error("Send email error: ", error);
                 responseMessage.style.display = "block";
                 responseMessage.textContent = "Failed to send email. Please try again.";
-                responseMessage.className = "error"; // Dodaj klasu za grešku
+                responseMessage.className = "error";
               }
             );
           });
@@ -427,17 +419,17 @@ The purpose of the project is to
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     const swiper = new Swiper(".swiper", {
-      loop: true, // Omogućuje beskonačno pomicanje
+      loop: true, 
       pagination: {
         el: ".swiper-pagination",
-        clickable: true, // Navigacija pomoću tačaka
+        clickable: true, 
       },
       navigation: {
-        nextEl: ".swiper-button-next", // Strelica za desno
-        prevEl: ".swiper-button-prev", // Strelica za levo
+        nextEl: ".swiper-button-next", 
+        prevEl: ".swiper-button-prev", 
       },
-      slidesPerView: 1, // Broj prikazanih slajdova
-      spaceBetween: 20, // Razmak između slajdova
+      slidesPerView: 1, 
+      spaceBetween: 20, 
     });
   });
 </script>
@@ -464,15 +456,13 @@ The purpose of the project is to
     border: 1px solid #f5c6cb;
   }
 
-  /* Promena boje strelica */
   .swiper-button-next,
   .swiper-button-prev {
-    color: #e4a109; /* Žuta boja */
+    color: #e4a109; 
   }
 
-  /* Hover efekat za strelice */
   .swiper-button-next:hover,
   .swiper-button-prev:hover {
-    color: #d18e08; /* Tamnija nijansa žute za hover efekat */
+    color: #d18e08; 
   }
 </style>

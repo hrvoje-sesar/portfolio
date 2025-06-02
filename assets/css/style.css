@@ -204,8 +204,8 @@ img {
 
   .contact-me-container {
     display: grid;
-    grid-template-columns: 1fr; /* Fiksni stupac */
-    gap: 1.5rem; /* Razmak između elemenata */
+    grid-template-columns: 1fr; 
+    gap: 1.5rem; 
     padding: 1.5rem 1rem;
     border-radius: 0.5rem;
     text-align: center;
@@ -213,23 +213,23 @@ img {
     box-shadow: 0 2px 5px rgba(199, 195, 195, 0.3);
     background: #2a3749;
     margin: 0 auto;
-    max-width: 600px; /* Maksimalna širina */
+    max-width: 600px; 
   }
 
   .contact-me-form {
     display: grid;
-    grid-template-columns: 1fr; /* Fiksni raspored elemenata u stupac */
-    gap: 1rem; /* Razmak između input polja i dugmeta */
+    grid-template-columns: 1fr; 
+    gap: 1rem; 
   }
 
   .contact-me-section {
-    margin-top: -6rem; /* Uklanja gornji razmak sekcije Contact Me */
-    padding-top: 1rem; /* Opcionalno: Dodaje manji razmak unutar sekcije */
+    margin-top: -6rem; 
+    padding-top: 1rem; 
   }
 
   .contact-me-form input,
   .contact-me-form textarea {
-    width: 100%; /* Fiksna širina inputa */
+    width: 100%; 
     padding: 0.75rem;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -237,7 +237,7 @@ img {
   }
 
   .contact-me-form textarea {
-    resize: none; /* Onemogućuje promjenu veličine teksta */
+    resize: none; 
   }
 
   /* Button Styles */
@@ -262,8 +262,8 @@ img {
   }
 
   .contact-me-form label {
-    color: #e4a109; /* Postavlja boju za sve labele */
-    font-weight: bold; /* Opcionalno: dodaje deblji tekst za labele */
+    color: #e4a109; 
+    font-weight: bold; 
   }
 }
 
@@ -313,7 +313,6 @@ img {
   background-color: #e4a109;
 }
 
-/* Change background header */
 .scroll-header {
   background-color: #f9f9f9;
   box-shadow: 0 2px 5px rgba(24, 22, 22, 0.301);
@@ -754,37 +753,37 @@ img {
   }
 
   .contact-me-section {
-    margin-top: -5rem; /* Uklanja gornji razmak sekcije Contact Me */
-    padding-top: 1rem; /* Opcionalno: Dodaje manji razmak unutar sekcije */
+    margin-top: -5rem; 
+    padding-top: 1rem; 
   }
 
   .contact-me-button {
-    font-family: "Poppins", sans-serif; /* Isti font */
-    font-weight: 500; /* Ista težina fonta */
+    font-family: "Poppins", sans-serif; 
+    font-weight: 500; 
     font-size: 0.75rem;
-    background-color: #2a3749; /* Ista pozadina */
-    color: #e4a109; /* Ista boja teksta */
+    background-color: #2a3749; 
+    color: #e4a109; 
     /* padding: 0.5rem 1rem;  */
     /* width: 100%; */
     padding: 0.5rem 1rem;
     border: 1px #e4a109 solid;
-    cursor: pointer; /* Isti pokazivač */
-    border-radius: 2px; /* Isti zaobljeni rubovi */
-    text-align: center; /* Centriranje teksta */
-    transition: all 0.3s ease-in-out; /* Dodavanje prelaznog efekta */
+    cursor: pointer; 
+    border-radius: 2px; 
+    text-align: center; 
+    transition: all 0.3s ease-in-out; 
     margin-top: 10px;
     font-size: 16px;
-    display: inline-block; /* Kako bi uklonio prekomjerni prostor */
+    display: inline-block; 
   }
 
   .contact-me-button:hover {
-    background-color: #e4a109; /* Promjena boje pozadine na hover */
-    color: #2a3749; /* Promjena boje teksta na hover */
+    background-color: #e4a109; 
+    color: #2a3749; 
   }
 
   .contact-me-form label {
-    color: #e4a109; /* Postavlja boju za sve labele */
-    font-weight: bold; /* Opcionalno: dodaje deblji tekst za labele */
+    color: #e4a109; 
+    font-weight: bold; 
   }
 
   .home__container,
@@ -855,32 +854,32 @@ img {
   }
 
   .contact-me-section {
-    margin-top: -20rem; /* Uklanja gornji razmak sekcije Contact Me */
-    padding-top: 1rem; /* Opcionalno: Dodaje manji razmak unutar sekcije */
+    margin-top: -20rem; 
+    padding-top: 1rem; 
   }
 
   .contact-me-button {
-    font-family: "Poppins", sans-serif; /* Isti font */
-    font-weight: 500; /* Ista težina fonta */
+    font-family: "Poppins", sans-serif; 
+    font-weight: 500; 
     font-size: 0.75rem;
-    background-color: #2a3749; /* Ista pozadina */
-    color: #e4a109; /* Ista boja teksta */
+    background-color: #2a3749; 
+    color: #e4a109; 
     /* padding: 0.5rem 1rem;  */
     /* width: 100%; */
     padding: 0.5rem 1rem;
     border: 1px #e4a109 solid;
-    cursor: pointer; /* Isti pokazivač */
-    border-radius: 2px; /* Isti zaobljeni rubovi */
-    text-align: center; /* Centriranje teksta */
-    transition: all 0.3s ease-in-out; /* Dodavanje prelaznog efekta */
+    cursor: pointer; 
+    border-radius: 2px; 
+    text-align: center; 
+    transition: all 0.3s ease-in-out; 
     margin-top: 10px;
     font-size: 16px;
-    display: inline-block; /* Kako bi uklonio prekomjerni prostor */
+    display: inline-block;
   }
 
   .contact-me-button:hover {
-    background-color: #e4a109; /* Promjena boje pozadine na hover */
-    color: #2a3749; /* Promjena boje teksta na hover */
+    background-color: #e4a109; 
+    color: #2a3749; 
   }
 
   .title {
@@ -1040,37 +1039,37 @@ img {
   }
 
   .contact-me-button {
-    font-family: "Poppins", sans-serif; /* Isti font */
-    font-weight: 500; /* Ista težina fonta */
+    font-family: "Poppins", sans-serif; 
+    font-weight: 500; 
     font-size: 0.75rem;
-    background-color: #2a3749; /* Ista pozadina */
-    color: #e4a109; /* Ista boja teksta */
+    background-color: #2a3749; 
+    color: #e4a109; 
     /* padding: 0.5rem 1rem;  */
     /* width: 100%; */
     padding: 0.5rem 1rem;
     border: 1px #e4a109 solid;
-    cursor: pointer; /* Isti pokazivač */
-    border-radius: 2px; /* Isti zaobljeni rubovi */
-    text-align: center; /* Centriranje teksta */
-    transition: all 0.3s ease-in-out; /* Dodavanje prelaznog efekta */
+    cursor: pointer; 
+    border-radius: 2px; 
+    text-align: center; 
+    transition: all 0.3s ease-in-out; 
     margin-top: 10px;
     font-size: 16px;
-    display: inline-block; /* Kako bi uklonio prekomjerni prostor */
+    display: inline-block; 
   }
 
   .contact-me-button:hover {
-    background-color: #e4a109; /* Promjena boje pozadine na hover */
-    color: #2a3749; /* Promjena boje teksta na hover */
+    background-color: #e4a109; 
+    color: #2a3749; 
   }
 
   .contact-me-section {
-    margin-top: -5rem; /* Uklanja gornji razmak sekcije Contact Me */
-    padding-top: 1rem; /* Opcionalno: Dodaje manji razmak unutar sekcije */
+    margin-top: -5rem; 
+    padding-top: 1rem; 
   }
 
   .contact-me-form label {
-    color: #e4a109; /* Postavlja boju za sve labele */
-    font-weight: bold; /* Opcionalno: dodaje deblji tekst za labele */
+    color: #e4a109; 
+    font-weight: bold; 
   }
 
   .home__data {
@@ -1201,9 +1200,8 @@ img {
     background-color: #0056b3;
   } */
 
-  /* General styles for Contact Me Section */
   .contact-me-section {
-    background-color: #f9f9f9; /* Isto kao Projects pozadina */
+    background-color: #f9f9f9; 
     padding: 3rem 0;
   }
 
@@ -1244,8 +1242,8 @@ img {
   }
 
   img.responsive {
-    max-width: 100%; /* Prilagođava se širini roditeljskog elementa */
-    height: auto;    /* Zadržava omjer slike */
+    max-width: 100%; 
+    height: auto;    
 }
 
 
@@ -1281,7 +1279,6 @@ img {
     color: #2a3749;
   }
 
-  /* Section title and subtitle styling */
   .contact-me-section .section-title {
     font-size: 2rem;
     text-align: center;
@@ -1296,13 +1293,13 @@ img {
   }
 
   .contact-me-form label {
-    color: #e4a109; /* Postavlja boju za sve labele */
-    font-weight: bold; /* Opcionalno: dodaje deblji tekst za labele */
+    color: #e4a109; 
+    font-weight: bold; 
   }
 
   .contact-me-section {
-    margin-top: -2rem; /* Uklanja gornji razmak sekcije Contact Me */
-    padding-top: 1rem; /* Opcionalno: Dodaje manji razmak unutar sekcije */
+    margin-top: -2rem; 
+    padding-top: 1rem; 
   }
 
   #response-message {
